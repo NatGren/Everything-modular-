@@ -1,30 +1,87 @@
 html {
   box-sizing: border-box;
+  background-color: #000;
+  font-family: 'Playball', cursive;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
-div {
-  position: relative;
-  bottom: -8em;
-  right: -6em;
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 p {
-  z-index: 2;
+
   color: white;
-  padding: 4rem;
-  margin: auto auto;
-  position: absolute;
-  text-align: cente;
+  text-align: center;
+}
+
+.tena {
+  font-family: 'Francois One', sans-serif;
+}
+
+.length {
+  max-width: 50%;
 }
 
 .box {
   border: 2px solid white;
 }
 
-@keyframes move-twink-back {
+.word {
+  text-transform: uppercase;
+  font-family: 'Francois One', sans-serif;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .length {
+    max-width: 50%;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  p {
+    color: yellow;
+  }
+
+  .box {
+    border: 2px solid yellow;
+  }
+
+  .word {
+    color: white;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  p {
+    color: white;
+  }
+
+  .box {
+    border: 2px solid white;
+  }
+
+  .hidden {
+    visibility: visible;
+  }
+
+}
+
+*@keyframes move-twink-back {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
 }
@@ -53,7 +110,7 @@ p {
 }
 
 .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  background:black url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
   z-index:-1;
 }
 
