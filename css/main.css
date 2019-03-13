@@ -25,7 +25,7 @@ p {
 }
 
 .length {
-  max-width: 50%;
+  max-width: 8em;
 }
 
 .box {
@@ -37,14 +37,41 @@ p {
   font-family: 'Francois One', sans-serif;
 }
 
+.hide {
+  display: none;
+}
+
+.fullhide {
+  display: none;
+}
+
+.smile {
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  left: 2.8em;
+  top: .7em;
+  color: yellow;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
 @media only screen and (min-width: 25em) {
 
-  .length {
-    max-width: 50%;
+  .fullhide {
+    display: inline;
   }
 
-  .hidden {
-    visibility: hidden;
+  .hide {
+    display: none;
+  }
+
+  .smile {
+    display: none;
+  }
+
+  p {
+    margin: 0;
   }
 
 }
@@ -63,6 +90,14 @@ p {
     color: white;
   }
 
+  .smile {
+    display: none;
+  }
+
+  .length {
+    max-width: 20em;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -75,8 +110,18 @@ p {
     border: 2px solid white;
   }
 
-  .hidden {
-    visibility: visible;
+  .hide {
+    display: inline;
+  }
+
+  .word {
+    text-transform: lowercase;
+    font-family: 'Playball', cursive;
+
+  }
+
+  .smile {
+    display: none;
   }
 
 }
